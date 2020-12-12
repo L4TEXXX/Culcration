@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>  <!-- jqueryで実装する場合 -->
+        <link rel="stylesheet" href="main.css">
+        <title>電卓</title>
+    </head>
+
+    <body>
+    　<div class="culcrate">
+       <form name="calcForm">
+         <div>
+            <input type="text" value="0" name="resultLine">
+         </div>
+         <div class="calc-button">
+            <input type="button" class="num-button" value="7" onclick="numValue(7)">
+            <input type="button" class="num-button" value="8" onclick="numValue(8)">
+            <input type="button" class="num-button" value="9" onclick="numValue(9)">
+            <input type="button" class="num-button" value="+" onclick="numCalc('+')">
+         </div>
+         <div class="calc-button">
+            <input type="button" class="num-button" value="4" onclick="numValue(4)">
+            <input type="button" class="num-button" value="5" onclick="numValue(5)">
+            <input type="button" class="num-button" value="6" onclick="numValue(6)">
+            <input type="button" class="num-button" value="-" onclick="numCalc('-')">
+         </div>
+         <div class="calc-button">
+            <input type="button" class="num-button" value="1" onclick="numValue(1)">
+            <input type="button" class="num-button" value="2" onclick="numValue(2)">
+            <input type="button" class="num-button" value="3" onclick="numValue(3)">
+            <input type="button" class="num-button" value="*" onclick="numCalc('*')">
+         </div>
+         <div class="calc-button">
+            <input type="button" class="num-button" value="0" onclick="numValue(0)">
+            <input type="button" class="num-button" value="00" onclick="numValue('00')">
+            <input type="button" class="num-button" value="." onclick="numValue('.')">
+            <input type="button" class="num-button" value="/" onclick="numCalc('/')">
+         </div>
+         <div class="calc-button">
+            <input type="button" class="under-button" value="AC" onclick="clearButton()">
+            <input type="button" class="under-button" value="=" onclick="numCalc('=')">
+         </div>
+       </form>
+      </div>
+        <script src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+.culcrate{
+    display:flex;
+    justify-content:center;
+}
+
+.calc-button{
+    width:100%;
+}
+
+.calc-button .num-button{
+    width:26px;
+    text-align:center;
+}
+
+.under-button{
+    width:57px;
+}
